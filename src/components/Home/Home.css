@@ -1,0 +1,12 @@
+.Home {
+    /* flex-basis: 30%; */
+    color: white;
+    flex: 1;
+}
+.chart-section {
+    display: flex;
+}
+
+.pie-chart {
+    flex: 1;
+}

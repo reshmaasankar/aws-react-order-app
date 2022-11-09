@@ -1,0 +1,65 @@
+.Sidebar {
+    /* flex-basis: 22%; */
+    /* flex: 1;
+    position: sticky;
+    height: calc(100vh - 3px);
+    width: 250px;
+    background-color: #101c44;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px; */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; */
+}
+.profile-sec{
+    flex: 0.3;
+}
+
+.SidebarList {
+    height: auto;
+    width: 100%;
+    padding: 0;
+}
+
+.SidebarList .list {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    list-style-type: none;
+}
+
+.Sidebar .navlink {
+    color: white;
+    text-decoration: none;
+    flex: 2;
+}
+
+.SidebarList .list:hover {
+    cursor: pointer;
+    background-color: #293846;
+}
+
+.SidebarList #active {
+    background-color: #293846;
+}
+
+.list .title {
+    flex: 50%;
+    padding: 20px;
+}
+.icon_sec{
+    flex: 1;
+    text-align: end;
+    margin-right: 15px;
+}
+.icon_sec > svg{
+    background-color: orange;
+    border-radius: 50px;
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+}

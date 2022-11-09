@@ -1,0 +1,64 @@
+/* .mainHeader {
+    flex: 5;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.image {
+    height: 45px;
+}
+
+.meals-title {
+    margin-left: 20px;
+}
+
+.header-list {
+    display: flex;
+} */
+
+.search-bar{
+    display: flex;
+    background-color: #101c44;
+    border-radius: 50px;
+    padding: 12px;
+}
+.search_text{
+    flex : 2;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.search_images{
+    background-color: #d6dbe033;
+    padding: 10px;
+    border-radius: 50px;
+}
+.search_images_usericon{
+    background-color: #0f037f;
+    padding: 10px;
+    border-radius: 50px;
+}
+.input_field{
+    background-color: transparent;
+    outline: none;
+}

@@ -1,0 +1,13 @@
+.MapTile{
+    flex-basis: 60%;
+}
+.leaflet-container {
+    height: 85vh;
+    border: 1px white solid;
+    /* border-radius: 5px; */
+    margin: 0px;
+    /* box-sizing: border-box; */
+}
+.leaflet-tile {
+    filter: hue-rotate(45deg) !important;
+}

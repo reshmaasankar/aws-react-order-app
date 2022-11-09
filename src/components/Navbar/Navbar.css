@@ -1,0 +1,233 @@
+.Navbar {
+    /* flex-basis: 78%; */
+    color: white;
+    overflow-y: auto;
+}
+.map_details{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.map-sec{
+    flex: 3;
+    position: relative;
+    height: 100%;
+}
+.top_layer{
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+    width: 100%;
+    padding: 10px;
+}
+.detail_sec{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #101c44;
+    padding: 0 8px;
+    overflow-y: scroll !important;
+    height: 90vh;
+    scrollbar-color: rebeccapurple green;
+}
+.heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    height: 6rem;
+    color: white;
+}
+.page-heading{
+    flex-basis: 35%;
+    flex-direction: column;
+}
+ .page-search{
+    flex-basis: 55%;
+ }
+.page-heading p:nth-child(1){
+        opacity: 0.5;
+        margin: 0;
+        font-size: 13px;
+}
+.page-heading p:nth-child(2) {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.order_details{
+    display: flex;
+    margin-top: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.delivery_name, .delivery_details{
+    flex: 1;
+}
+.user_image{
+    flex: 0.3;
+    height: 50px;
+    border-radius: 50px;
+}
+.delivery_name > p, .delivery_details >p {
+    margin: 0;
+    padding-left: 10px;
+    text-align: center;
+}
+.delivery_name p:nth-child(2){
+    font-size: 11px;
+    opacity: 0.5;
+}
+.delivery_details p:nth-child(1) {
+    background-color: orange;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+.delivery_details p:nth-child(2) {
+    background-color: grey;
+    border-radius: 50px;
+    font-size: 14px;
+}
+.support{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+.deliver_det{
+    border-bottom: 2px solid #80808063;
+}
+.call{
+    height: 50px;
+    border-radius: 24px;
+    margin: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.order-details{
+    background-color: #101c44;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 10px;
+
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meal{
+    background-color: #d6dbe033;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.details p {
+    margin: 0;
+}
+.details{
+    margin-left: 10px;
+}
+.details p:nth-child(1) {
+    opacity: 0.5;
+    font-size: 13px;
+
+}
+.details p:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+}
+.mid-bar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    align-items: center;
+    border-bottom: 2px solid #80808063;
+    padding: 10px 0;
+}
+.panel-sec{
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    bottom: 20px;
+    position: absolute;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+.end-sec{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    /* overflow: hidden; */
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 230, 0);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b3aa00;
+}
+.title_dec{
+        padding: 10px;
+        font-size: 20px;
+        /* font-style: italic; */
+        color: antiquewhite;
+        /* text-decoration: underline;
+        text-decoration-color: rgb(204, 204, 216); */
+        margin-bottom: 0px !important;
+        font-weight: 800;
+        padding-bottom: 0px;
+}
+.underline{
+    border-bottom: 5px solid orange;
+    width: 18%;
+    margin-left: 10px;
+}
