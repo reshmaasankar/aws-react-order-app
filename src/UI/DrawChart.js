@@ -36,7 +36,6 @@ const DrawChart = (element, data) => {
 
   const arcGenerator = d3.arc().innerRadius(20).outerRadius(40);
   const pieGenerator = d3.pie().value((d) => d.value);
-  console.log('piegen', pieGenerator);
 
   const arcs = svg.selectAll().data(pieGenerator(data)).enter();
   arcs
@@ -77,7 +76,6 @@ const DrawChart = (element, data) => {
       return colors[i % data.length];
     })
     .text(function (d, i) {
-      console.log('d is', d);
       return data[i].month;
     })
     .attr('text-anchor', 'left')

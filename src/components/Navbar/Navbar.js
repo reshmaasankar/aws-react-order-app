@@ -30,11 +30,19 @@ function Navbar() {
       .then((res) => res.json())
       .then((res) => {
         console.log('the main data is', res);
+        var max = res['body']['Items'].reduce(function (prev, current) {
+          if (+current.order_id > +prev.order_id) {
+            return current;
+          } else {
+            return prev;
+          }
+        });
+        console.log('max value is', max);
         setMainData({
-          food_ordered: res['body']['Items'][0].no_of_items,
-          res_explored: res['body']['Items'][0].no_of_restaurents,
-          total_spent: res['body']['Items'][0].total_money,
-          agent_name: res['body']['Items'][0].delivery_agent,
+          food_ordered: max.no_of_items,
+          res_explored: max.no_of_restaurents,
+          total_spent: max.total_money,
+          agent_name: max.delivery_agent,
         });
       });
   }, []);
